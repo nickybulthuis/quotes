@@ -101,7 +101,7 @@ def test_get_quotes_are_cached():
     responses.add(responses.GET, 'https://www.meesman.nl/onze-fondsen/aandelen-wereldwijd-totaal/',
                   body=body, status=200)
     responses.add(responses.GET, 'https://www.meesman.nl/onze-fondsen/aandelen-wereldwijd-totaal/',
-                  body=body, status=500)
+                  body='error', status=500)
 
     assert len(quote_cache) == 0
 

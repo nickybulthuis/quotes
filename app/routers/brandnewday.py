@@ -11,7 +11,7 @@ from app.models import Fund, Quote, Message
 
 router = APIRouter(
     prefix='/brandnewday',
-    tags=['brandnewday']
+    tags=['Brand New Day']
 )
 
 BASE_URL = 'https://secure.brandnewday.nl/service/{0}/'

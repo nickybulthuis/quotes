@@ -12,7 +12,7 @@ from app.models import Quote, Message
 
 router = APIRouter(
     prefix='/meesman',
-    tags=['meesman']
+    tags=['Meesman']
 )
 
 QUOTES_REGEX = r'data:\s(\[{.*}+\])'
