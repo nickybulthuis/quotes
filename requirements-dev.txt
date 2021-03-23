@@ -1,0 +1,5 @@
+pytest==6.2.2
+pytest-cov==2.11.1
+pytest-flake8==1.0.7
+responses==0.13.1
+uvicorn==0.13.4
