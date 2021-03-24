@@ -1,3 +1,6 @@
+# Quotes
+[![Build and Test](https://github.com/nbult/quotes/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/nbult/quotes/actions/workflows/build-and-test.yml)
+
 Once you start investing, it is desirable to keep track of your progress. It is logical; you have embarked on a new
 aspect of your finances and want to keep an eye on it.
 
