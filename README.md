@@ -16,8 +16,8 @@ It's basically trying to automate what you could do by hand.
 
 ## Supported websites
 
-* [Meesman](https://meesman.nl)
 * [Brand New Day](https://brandnewday.nl)
+* [Meesman](https://meesman.nl)
 
 You can either use the public endpoint or host the project yourself in Docker (see below). 
 
@@ -30,6 +30,7 @@ allows you to automatically download stock prices or quotes for your securities.
 
 Use the following settings to download Historical Quotes for *Meesman* funds. For Latest Quote, use the (same as
 historical quotes) option.
+
 | Setting | Value |
 | ----------- | ----------- |
 | Provider | JSON Feed |
@@ -43,6 +44,7 @@ You can replace **aandelen-wereldwijd-totaal** with any of the other available f
 
 Use the following settings to download Historical Quotes for *Brand New Day* funds. For Latest Quote, use the (same as
 historical quotes) option.
+
 | Setting | Value |
 | ----------- | ----------- |
 | Provider | JSON Feed |

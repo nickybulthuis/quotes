@@ -4,9 +4,10 @@ from app.routers import meesman, brandnewday
 
 tags_metadata = [
     {
-        "name": "Meesman",
-    }, {
         "name": "Brand New Day",
+
+    }, {
+        "name": "Meesman",
     },
 ]
 app = FastAPI(
@@ -20,8 +21,8 @@ It's basically trying to automate what you could do by hand.
 
 ## Supported websites
 
-* [Meesman](https://meesman.nl)
 * [Brand New Day](https://brandnewday.nl)
+* [Meesman](https://meesman.nl)
 
 ## Disclaimer
 
