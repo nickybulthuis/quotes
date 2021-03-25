@@ -40,7 +40,6 @@ async def fetch_funds():
         raise HTTPException(status_code=502, detail={'message': 'Could not retrieve funds'})
 
     soup = BeautifulSoup(r.text, 'html.parser')
-    print(soup.prettify())
     cache.clear()
 
     for fund in soup.find_all('tr', {'class': 'showFonds'}):
