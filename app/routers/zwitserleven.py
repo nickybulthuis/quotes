@@ -25,7 +25,7 @@ cache = TTLCache(maxsize=128, ttl=60 * 60 * 4)  # ttl in seconds, 4hrs.
 @router.get(
     "/",
     response_model=List[str],
-    summary="Get all available funds with the latest price"
+    summary="Get all available funds"
 )
 async def get_funds():
     if len(cache) == 0:
