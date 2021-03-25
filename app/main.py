@@ -1,13 +1,14 @@
 from fastapi import FastAPI
 
-from app.routers import meesman, brandnewday
+from app.routers import meesman, brandnewday, zwitserleven
 
 tags_metadata = [
     {
         "name": "Brand New Day",
-
     }, {
         "name": "Meesman",
+    }, {
+        "name": "Zwitserleven",
     },
 ]
 app = FastAPI(
@@ -23,6 +24,7 @@ It's basically trying to automate what you could do by hand.
 
 * [Brand New Day](https://brandnewday.nl)
 * [Meesman](https://meesman.nl)
+* [Zwitserleven](https://zwitserleven.nl)
 
 ## Disclaimer
 
@@ -40,3 +42,4 @@ Source code is available at [GitHub](https://github.com/nbult/quotes)
 
 app.include_router(meesman.router)
 app.include_router(brandnewday.router)
+app.include_router(zwitserleven.router)
