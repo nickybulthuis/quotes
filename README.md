@@ -54,6 +54,19 @@ historical quotes) option.
 
 You can replace **bnd-wereld-indexfonds-c-unhedged** with any of the other available fund names.
 
+#### Zwitserleven
+
+Use the following settings to download the Latest Quote for a Zwiterleven fund. Zwitserleven doesn't support historical quotes.
+
+| Setting | Value |
+| ----------- | ----------- |
+| Provider | JSON Feed |
+| URL | https://quotes.totalechaos.nl/zwitserleven/zwitserleven-wereld-aandelenfonds |
+| Path to Date | $.[*].Date |
+| Path to Close | $.[*].Close |
+
+You can replace **zwitserleven-wereld-aandelenfonds** with any of the other available fund names.
+
 ## Excel
 
 Excel has the ability to download json data from the web and transform it in to a table. To use the API in excel, follow
