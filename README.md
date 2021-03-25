@@ -18,6 +18,7 @@ It's basically trying to automate what you could do by hand.
 
 * [Brand New Day](https://brandnewday.nl)
 * [Meesman](https://meesman.nl)
+* [Zwitserleven](https://zwitserleven.nl)
 
 You can either use the public endpoint or host the project yourself in Docker (see below). 
 
