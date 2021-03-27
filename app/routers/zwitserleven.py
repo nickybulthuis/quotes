@@ -27,7 +27,7 @@ cache = TTLCache(maxsize=128, ttl=60 * 60 * 4)  # ttl in seconds, 4hrs.
     response_model=List[str],
     summary="Get all available funds"
 )
-async def get_funds():
+async def get_funds() -> List[str]:
     if len(cache) == 0:
         await fetch_funds()
     return list(cache.keys())
@@ -60,7 +60,7 @@ async def fetch_funds():
                404: {'description': 'When the specified fund could not be found, or the fund is unknown',
                      'model': Message}},
 )
-async def get_quotes(fund_name: str):
+async def get_quotes(fund_name: str) -> List[Quote]:
     funds = await get_funds()
 
     if fund_name in funds:

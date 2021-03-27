@@ -26,11 +26,11 @@ quote_cache = TTLCache(maxsize=128, ttl=60 * 60 * 4)  # ttl in seconds, 4hrs.
     summary="Get all available funds",
     responses={502: {'description': 'When an error occurred while retrieving the funds', 'model': Message}}
 )
-async def get_funds():
+async def get_funds() -> List[str]:
     return [f.name for f in await list_funds()]
 
 
-async def list_funds():
+async def list_funds() -> List[Fund]:
     if len(funds_cache) == 0:
         await fetch_funds()
     return list(funds_cache.values())
@@ -63,7 +63,7 @@ async def fetch_funds():
                404: {'description': 'When the specified fund could not be found, or the fund is unknown',
                      'model': Message}},
 )
-async def get_quotes(fund_name: str, page: Optional[int] = 1):
+async def get_quotes(fund_name: str, page: Optional[int] = 1) -> List[Quote]:
     funds = await list_funds()
     fund = next((f for f in funds if f.name == fund_name.strip().lower()), None)
 
@@ -79,7 +79,7 @@ async def get_quotes(fund_name: str, page: Optional[int] = 1):
         raise HTTPException(status_code=404, detail="Fund {0} could not be found".format(fund_name))
 
 
-async def fetch_quotes(fund_id, page):
+async def fetch_quotes(fund_id: str, page: int):
     if page < 1:
         raise HTTPException(status_code=400, detail="Invalid page, must be >= 1")
 
@@ -104,5 +104,5 @@ async def fetch_quotes(fund_id, page):
     ]
 
 
-def get_cache_id(fund_id, page):
+def get_cache_id(fund_id: str, page: int) -> str:
     return '{0}@{1}'.format(fund_id, page)
