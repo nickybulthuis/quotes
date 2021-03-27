@@ -34,7 +34,7 @@ names and related names, brands, emblems and images are registered trademarks of
 
 Source code is available at [GitHub](https://github.com/nbult/quotes)
     ''',
-    version="1.1.0",
+    version="1.1.1",
     openapi_tags=tags_metadata,
     docs_url='/',
     redoc_url=None,
