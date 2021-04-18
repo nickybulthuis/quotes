@@ -20,7 +20,7 @@ It's basically trying to automate what you could do by hand.
 * [Meesman](https://meesman.nl)
 * [Zwitserleven](https://zwitserleven.nl)
 
-You can either use the public endpoint or host the project yourself in Docker (see below). 
+You can host the project yourself in Docker (see below). 
 
 ## Portfolio Performance
 
@@ -35,7 +35,7 @@ historical quotes) option.
 | Setting | Value |
 | ----------- | ----------- |
 | Provider | JSON Feed |
-| URL | https://quotes.totalechaos.nl/meesman/aandelen-wereldwijd-totaal |
+| URL | http://127.0.0.1/meesman/aandelen-wereldwijd-totaal |
 | Path to Date | $.[*].Date |
 | Path to Close | $.[*].Close |
 
@@ -49,7 +49,7 @@ historical quotes) option.
 | Setting | Value |
 | ----------- | ----------- |
 | Provider | JSON Feed |
-| URL | https://quotes.totalechaos.nl/brandnewday/bnd-wereld-indexfonds-c-unhedged?page={PAGE} |
+| URL | http://127.0.0.1/brandnewday/bnd-wereld-indexfonds-c-unhedged?page={PAGE} |
 | Path to Date | $.[*].Date |
 | Path to Close | $.[*].Close |
 
@@ -62,7 +62,7 @@ Use the following settings to download the Latest Quote for a Zwiterleven fund. 
 | Setting | Value |
 | ----------- | ----------- |
 | Provider | JSON Feed |
-| URL | https://quotes.totalechaos.nl/zwitserleven/zwitserleven-wereld-aandelenfonds |
+| URL | http://127.0.0.1/zwitserleven/zwitserleven-wereld-aandelenfonds |
 | Path to Date | $.[*].Date |
 | Path to Close | $.[*].Close |
 
@@ -74,7 +74,7 @@ Excel has the ability to download json data from the web and transform it in to 
 the following steps.
 
 1. Navigate to the Data tab.
-2. Click 'From Web' and use URL: https://quotes.totalechaos.nl/meesman/aandelen-wereldwijd-totaal.
+2. Click 'From Web' and use URL: http://127.0.0.1/meesman/aandelen-wereldwijd-totaal or another fund URL.
 3. Excel will now load the JSON data and you should see a list of 'Records'.
 4. Click 'To Table' on the 'Transform' tab.
 5. Click the 'Expand Column' icon on the Column 1 header.
