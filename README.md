@@ -9,7 +9,7 @@ information websites is not easy. Sometimes the only source of information is th
 the information provided is often not readily available nor in a structured format.
 
 The purpose of this project is to provide stock quotes for specific funds, by accessing the fund manager's website, by
-filling in forms, or by using other APIs to request them. The stock prices are then converted into a structured format
+filling in forms, or by using other APIs to request them. The stock quotes are then converted into a structured format
 for use in [Portfolio Performance](https://www.portfolio-performance.info/), Excel or equivalent.
 
 It's basically trying to automate what you could do by hand.
@@ -20,7 +20,7 @@ It's basically trying to automate what you could do by hand.
 * [Meesman](https://meesman.nl)
 * [Zwitserleven](https://zwitserleven.nl)
 
-You can host the project yourself in Docker (see below). 
+You can host the project yourself with Docker (see below). 
 
 ## Portfolio Performance
 
@@ -106,6 +106,31 @@ docker run -d -p 80:80 --restart=always --name=quotes quotes
 ```
 
 The API documentation will be available on http://127.0.0.1/
+
+## Screenshots
+
+### API Documentation
+
+---
+
+![API](./docs/images/screenshot_api_documentation.png)
+
+### Portfolio Performance
+
+---
+
+![Portfolio Performance Settings](./docs/images/screenshot_portfolio_performance_settings.png)
+
+![Portfolio Performance Quotes](./docs/images/screenshot_portfolio_performance_quotes.png)
+
+### Excel
+
+---
+
+![Excel Settings](./docs/images/screenshot_excel_settings.PNG)
+
+![Excel Quotes](./docs/images/screenshot_excel_quotes.png)
+
 
 ## Disclaimer
 

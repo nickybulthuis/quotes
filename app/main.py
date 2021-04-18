@@ -15,7 +15,7 @@ app = FastAPI(
     title="Quotes",
     description='''
 The purpose of this project is to provide stock quotes for specific funds, by accessing the fund manager's website, by
-filling in forms, or by using other APIs to request them. The stock prices are then converted into a structured format
+filling in forms, or by using other APIs to request them. The stock quotes are then converted into a structured format
 for use in [Portfolio Performance](https://www.portfolio-performance.info/), Excel or equivalent.
 
 It's basically trying to automate what you could do by hand.
@@ -34,7 +34,7 @@ names and related names, brands, emblems and images are registered trademarks of
 
 Source code is available at [GitHub](https://github.com/nbult/quotes)
     ''',
-    version="1.1.1",
+    version="1.1.2",
     openapi_tags=tags_metadata,
     docs_url='/',
     redoc_url=None,
